@@ -1,0 +1,59 @@
+/* Tailwind directives load the base reset, components, and utility classes. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google font import for typography; fonts are also configured in the App Router layout. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: dark;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background-color: #1a1a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.04), transparent 30%),
+    linear-gradient(180deg, #161616 0%, #0d0d0d 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(195, 152, 96, 0.35);
+  color: #fdfdfd;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+/* Accessible focus rings for interactive controls */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(198, 168, 111, 0.9);
+  outline-offset: 3px;
+}
+
+/* Utility class for glassmorphism sections and cards. */
+.section-glass {
+  backdrop-filter: blur(18px);
+  background-color: rgba(18, 18, 18, 0.68);
+}
+
+@layer utilities {
+  .glass-border {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
