@@ -4,7 +4,7 @@
  * FloatingContactButtons renders persistent action buttons for WhatsApp chat and phone dialing.
  */
 export default function FloatingContactButtons() {
-  const phoneNumber = '987028024';
+  const phoneNumber = '9870280248';
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
   const telUrl = `tel:${phoneNumber}`;
 
