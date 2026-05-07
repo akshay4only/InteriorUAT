@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { heroImageVariant, heroTextVariant, staggerContainer } from '@/lib/animations';
 
 // Ordered headline lines used for stacked text reveal animations.
-const headingLines = ['Bespoke Interiors', 'Editorial Luxury', 'Modern Craftsmanship'];
+const headingLines = ['Aditya\'s Interiors', 'Editorial Luxury', 'Modern Craftsmanship'];
 
 /**
  * HeroSection presents the entry experience with split-screen layout and motion reveal.
